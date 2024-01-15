@@ -1,0 +1,22 @@
+<%- include ("partials/header") -%>
+
+
+
+    <div class="container">
+        <div class="glass">
+            <h2>Please sign up</h2>
+            <form action="/api/auth/login" method="post" autocomplete="off">
+                <input id="fN" name="UsernameInput" type="text" placeholder="Username or email" required autocomplete="off">
+                <input id="sN" name="password" type="password" placeholder="password" required autocomplete="off">
+                <input id="lN" name="ConfirmPassword" type="password" placeholder="Confirm Password" required autocomplete="off">
+                <input id="button" type="submit" value="Enter">
+            </form>
+            <div class="login">
+                <p>Already sign up</p>
+                <a href="./login">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+ <%- include ("partials/footer") -%>
